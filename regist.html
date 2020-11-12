@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>xworkzRegiPage</title>
+   
+    <style>
+
+   .par{
+       font-size: 40px;
+       color: red;
+       margin: 90px;
+       /* background-color: bisque; */
+       /* margin-top: 30px; */
+       border: 3px solid green;
+       width: 50%;
+       /* padding: 40px;  */
+       padding-left: 20px;
+       padding-top: 40px;
+       /* border-radius: 9px; */
+       /* border-top-left-radius: 20px;
+       border-bottom-right-radius: 20px; */
+       /* border-left: 5px solid aqua; */
+   }
+   header{
+       /* border: 2px solid red; */
+       height: 100px;
+       text-align: center;
+       font-size: 50px;
+       color: rgb(255, 251, 0);
+       background-color: skyblue;
+       text-transform: capitalize;
+       text-shadow: 6px 5px 3px goldenrod;
+   }
+   nav{
+       background-color: rgb(162, 199, 230);
+       font-size: 20px;
+       text-align: center;
+       
+   }
+   ul{
+       list-style-type: none;
+       display: inline-block;
+       /* explain later */
+   }
+   li{
+    display: inline-block;
+    margin-left: 40px;
+   
+   }
+   a:link{
+       text-decoration: none;
+   }
+   a:hover{
+       text-decoration: underline;
+       background-color: tan;
+   }
+/* class selectors */
+
+h1,h2,div.h5{
+    font-size: 30px;
+    color: red;
+}
+body{
+/* background-color: rgb(228, 235, 191); */
+/* background-image: url("img/logo.png"); */
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-repeat: no-repeat; 
+background-position: 300px 400px;
+/* background-size: 100%; */
+}
+
+div ~ p{
+    font-size: 30px;
+    color: red;
+    background-color: rgb(162, 180, 83);
+}
+div ul  li{
+    list-style-type: disc !important;
+    /* background-color: red; */
+    display: block;
+    line-height: 20px;
+   
+}
+    </style>
+     <!-- <link rel="stylesheet" href="css/xworkcomman.css" type="text/css"> -->
+</head>
+<body>
+    <header>Online Shopping Cart</header>
+    <nav>
+   <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">Register</a></li>
+       <li><a href="#">Contact</a></li>
+       <li><a href="#">Login</a></li>
+   </ul>
+   </nav>
+   <div id='mytime'></div>
+<!-- <div>
+    <p>java developers</p>
+    <p>jEE developers</p>
+    <p>hello</p>
+    <p>angular developers</p>
+</div>
+<p>nodejs developers</p>
+<p>react developers</p>
+<p>sql developers</p>
+<hr>
+<div>
+<ul>
+    <li>java</li>
+    <li>jee</li>
+    <li>Web tech</li>
+</ul>
+</div> -->
+<hr><br>
+<br><br><br><br><br><br><br><br>
+<button onclick="setTimeout(runApp,3000)">Click</button>
+<!-- <button onclick="gotoPage()">xWorkz</button> -->
+<script>
+function runApp(){
+    alert('application is running...')
+}
+function gotoPage(){
+    window.location.href="https://www.x-workz.in/";
+}
+
+// setTimeout(gotoPage,6000);
+var par= document.querySelector('#mytime');
+function timeDisp(){
+var d= new Date();
+par.innerHTML=d.toLocaleTimeString();
+}
+//setInterval(timeDisp,1000);
+
+setInterval(() => {
+    var d= new Date();
+par.innerHTML=d.toLocaleTimeString();
+}, 1000);
+// console.log(d.toLocaleTimeString());
+
+</script>
+</body>
+
+</html>
